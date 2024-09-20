@@ -1,0 +1,122 @@
+.measureSty {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #909399;
+  border-radius: 6px;
+  overflow: hidden;
+  color: #333;
+}
+.measureSty .personSty {
+  border-bottom: 2px solid #909399;
+}
+.measureSty .personSty > :first-child {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.measureSty .personSty > :first-child div {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 8px;
+}
+.measureSty .personSty .personInfoSty {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #909399;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 10px 20px 10px;
+}
+.measureSty .personSty .personInfoSty > div {
+  width: calc(100% / 2);
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #909399;
+}
+.measureSty .personSty .personInfoSty > div > span {
+  border-left: 1px solid #909399;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.measureSty .personSty .personInfoSty > div > :nth-child(2n-1) {
+  width: 35%;
+  font-weight: bold;
+}
+.measureSty .personSty .personInfoSty > div > :nth-child(2n) {
+  width: 65%;
+}
+.measureSty .personSty .personInfoSty > :nth-child(2n-1) :first-child {
+  border: none;
+  letter-spacing: 5px;
+}
+.measureSty .personSty .personInfoSty > :last-child,
+.measureSty .personSty .personInfoSty > :nth-last-child(2) {
+  border: none;
+}
+.measureSty .tableSty {
+  border-bottom: 2px solid #909399;
+  padding: 20px 10px;
+  height: 248px;
+}
+.measureSty .tableSty /deep/ .el-table--border,
+.measureSty .tableSty .el-table--group {
+  border: 1px solid #909399;
+  width: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.measureSty .tableSty /deep/ .el-table td.el-table__cell,
+.measureSty .tableSty /deep/ .el-table th.el-table__cell.is-leaf {
+  padding: 4px 0;
+  border-bottom: 1px solid #909399;
+  border-right: 1px solid #909399;
+  color: #333;
+}
+.measureSty .tableSty /deep/ .el-table--border .el-table__cell:first-child .cell {
+  letter-spacing: 5px;
+}
+.measureSty .tableSty /deep/ .el-table td,
+.measureSty .tableSty /deep/ .el-table th {
+  text-align: center;
+}
+.measureSty .tableSty /deep/ .el-table__body > :last-child > :last-child td {
+  border-bottom: none;
+}
+.measureSty .tableSty .empty {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.measureSty .tableSty .tip {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.measureSty .resSty {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 2px solid #909399;
+}
+.measureSty .resSty > :last-child {
+  text-indent: 30px;
+}
+.measureSty .docSty {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: flex-end;
+}
+.titNav {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: block;
+}
+ /deep/ .el-dialog__body {
+  padding: 10px !important;
+}
