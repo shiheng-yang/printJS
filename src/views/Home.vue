@@ -69,7 +69,6 @@ export default {
   },
   data() {
     return {
-      name: '',
       tableData: [], //数据
       dialogVisible: false, //模态框显影
       printList: [],
@@ -101,15 +100,17 @@ export default {
       this.tableData = rs
       // })
     },
-    // 重置
-    reserts() {},
     // 取消
     cancles() {
       this.dialogVisible = false
     },
     // 展开模态框
     openDialog(row) {
-      this.cjQuery(row)
+      this.printInfo = row
+      // 截取前5条
+      this.printList = this.tableData.slice(-5).map((k, i) => {
+        return { ...k, index: i + 1 }
+      })
       this.dialogVisible = true
     },
     // 打印
@@ -135,16 +136,6 @@ export default {
           scanStyles: false,
         })
       })
-    },
-    cjQuery(row) {
-      this.printInfo = row
-      // xxxxx(params).then((res) => {
-      // if (res) {
-      this.printList = this.tableData.slice(-5).map((k, i) => {
-        return { ...k, index: i + 1 }
-      })
-      // }
-      // })
     },
   },
   mounted() {
